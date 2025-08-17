@@ -1,0 +1,270 @@
+/* Kiểu dáng cho phần giỏ hàng */
+.cart-place {
+  margin-top: 20px; /* Khoảng cách phía trên */
+}
+/* Kiểu dáng cho thông báo lỗi trong trang đặt hàng */
+.placeorder-error {
+  color: #dc3545; /* Màu chữ đỏ để nổi bật thông báo lỗi */
+  background-color: #f8d7da; /* Nền nhẹ để làm nổi bật thông báo */
+  padding: 10px; /* Khoảng cách xung quanh */
+  border: 1px solid #dc3545; /* Viền đỏ */
+  border-radius: 4px; /* Bo góc */
+  margin-bottom: 15px; /* Khoảng cách dưới thông báo lỗi */
+  font-weight: bold; /* Đậm chữ */
+}
+
+/* Kiểu dáng cho nút "Đặt hàng" trong trang đặt hàng */
+.placeorder-button {
+  background-color: #8a6c1c; /* Màu nền xanh dương */
+  color: white; /* Màu chữ trắng */
+  padding: 10px 15px; /* Khoảng cách xung quanh */
+  border: none; /* Không có viền */
+  border-radius: 4px; /* Bo góc */
+  cursor: pointer; /* Con trỏ chuột khi di chuột qua */
+  font-size: 16px; /* Kích thước chữ */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền */
+}
+
+/* Hiệu ứng khi di chuột qua nút */
+.placeorder-button:hover {
+  background-color: #c5a754; /* Màu nền khi hover */
+}
+
+/* Hiệu ứng khi nút bị vô hiệu hóa */
+.placeorder-button:disabled {
+  background-color: #cccccc; /* Màu nền khi vô hiệu hóa */
+  cursor: not-allowed; /* Con trỏ chuột khi không thể nhấn */
+}
+
+/* Kiểu dáng cho từng sản phẩm trong giỏ hàng */
+.cart-item-place {
+  display: flex; /* Sử dụng flexbox để căn chỉnh */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  margin-bottom: 15px; /* Khoảng cách giữa các sản phẩm */
+  padding: 10px; /* Khoảng cách trong từng sản phẩm */
+  background-color: #f9f9f9; /* Nền của từng sản phẩm */
+  border-radius: 8px; /* Bo góc cho sản phẩm */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+/* Kích thước ảnh sản phẩm */
+.cart-item-place img {
+  width: 80px; /* Kích thước ảnh */
+  height: 80px; /* Kích thước ảnh */
+  border-radius: 4px; /* Bo góc cho ảnh */
+  margin-right: 15px; /* Khoảng cách giữa ảnh và tên sản phẩm */
+}
+
+/* Kiểu dáng cho thông tin sản phẩm */
+.cart-details-place {
+  flex-grow: 1; /* Giúp thông tin sản phẩm chiếm không gian còn lại */
+}
+
+/* Kiểu dáng cho tổng tiền */
+.cart-total {
+  margin-top: 20px; /* Khoảng cách phía trên */
+  font-weight: bold; /* Đậm chữ */
+  font-size: 18px; /* Kích thước chữ */
+}
+
+/* Cải thiện kiểu dáng cho tiêu đề giỏ hàng */
+.section-title h3.title {
+  font-size: 24px; /* Kích thước chữ tiêu đề */
+  margin-bottom: 10px; /* Khoảng cách phía dưới */
+}
+
+/* Đảm bảo giỏ hàng responsiv */
+@media (max-width: 768px) {
+  .cart-item-place {
+    flex-direction: column; /* Chuyển thành cột trên màn hình nhỏ */
+    align-items: flex-start; /* Căn trái */
+  }
+
+  .cart-item-place img {
+    margin-bottom: 10px; /* Khoảng cách dưới ảnh trên màn hình nhỏ */
+  }
+}
+
+.place-order-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.page-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.order-content {
+  display: flex;
+  gap: 30px;
+}
+
+.order-form, .order-summary {
+  flex: 1;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.section-title {
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.cart-items {
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+.item-details h4 {
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.item-details p {
+  margin: 0;
+  color: #666;
+}
+
+.cart-total {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #ddd;
+}
+
+.place-order-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.place-order-button:hover {
+  background-color: #45a049;
+}
+
+.payment-method {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .order-content {
+    flex-direction: column;
+  }
+}
+
+/* Kiểu dáng cho nút checkout và lịch sử đặt hàng */
+.primary-btn.order-submit,
+.primary-btn.order-history-btn {
+  background-color: #c69a39;
+  border-color: #c69a39;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
+
+.primary-btn.order-submit:hover,
+.primary-btn.order-history-btn:hover {
+  background-color: #b38a33;
+  color: white;
+}
+
+.primary-btn.order-submit-disabled {
+  background-color: #d1c97e;
+  color: #858549;
+  cursor: not-allowed;
+}
+
+.primary-btn.order-history-btn {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* Đảm bảo các nút responsive */
+@media (max-width: 768px) {
+  .primary-btn.order-submit,
+  .primary-btn.order-history-btn {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.btn-custom-order {
+  background-color: #c69a39;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom-order:hover {
+  background-color: #dfb65f;
+}
+
+.btn-custom-order:active {
+  background-color: #8a6a26;
+}

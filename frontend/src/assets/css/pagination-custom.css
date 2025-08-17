@@ -1,0 +1,46 @@
+.pagination {
+  --pagination-bg: #fff;
+  --pagination-active-bg: #2ec4b6;
+  --pagination-active-color: #fff;
+  --pagination-hover-bg: #e0f7fa;
+  --pagination-hover-color: #2ec4b6;
+  --pagination-border: #2ec4b6;
+  --pagination-disabled-bg: #f8f9fa;
+  --pagination-disabled-color: #bdbdbd;
+}
+.pagination .page-item {
+  margin: 0 2px;
+}
+.pagination .page-link {
+  border: 1px solid var(--pagination-border);
+  color: var(--pagination-border);
+  background: var(--pagination-bg);
+  border-radius: 6px;
+  min-width: 38px;
+  min-height: 38px;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.pagination .page-item.active .page-link {
+  background: var(--pagination-active-bg);
+  color: var(--pagination-active-color);
+  border-color: var(--pagination-active-bg);
+  box-shadow: 0 2px 8px #2ec4b633;
+}
+.pagination .page-link:hover,
+.pagination .page-item:not(.active):not(.disabled) .page-link:focus {
+  background: var(--pagination-hover-bg);
+  color: var(--pagination-hover-color);
+  border-color: var(--pagination-hover-bg);
+}
+.pagination .page-item.disabled .page-link {
+  background: var(--pagination-disabled-bg);
+  color: var(--pagination-disabled-color);
+  border-color: var(--pagination-disabled-bg);
+  cursor: not-allowed;
+}
+.pagination .page-link {
+  outline: none;
+  box-shadow: none;
+}

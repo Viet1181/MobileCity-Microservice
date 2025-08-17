@@ -1,0 +1,186 @@
+.product-list {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các sản phẩm tự động xuống dòng khi không đủ chỗ */
+  gap: 20px; /* Khoảng cách giữa các sản phẩm */
+}
+
+.product-list > div {
+  flex: 1 1 calc(33.33% - 20px); /* Chia mỗi sản phẩm chiếm 1/3 hàng, trừ đi khoảng cách */
+  box-sizing: border-box; /* Đảm bảo padding và border không ảnh hưởng đến kích thước */
+}
+
+@media (max-width: 768px) {
+  .product-list > div {
+    flex: 1 1 calc(50% - 20px); /* Chia 2 sản phẩm trên 1 hàng khi màn hình nhỏ */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-list > div {
+    flex: 1 1 100%; /* Khi màn hình rất nhỏ, mỗi sản phẩm chiếm 1 hàng */
+  }
+}
+.custom-col {
+  flex: 0 0 calc(20% - 10px); /* 100% / 5 sản phẩm = 20% mỗi sản phẩm */
+  max-width: calc(20% - 10px); /* Đảm bảo mỗi sản phẩm chiếm 20% */
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.product-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product-page-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-list > div {
+  flex: 1 1 calc(33.33% - 20px);
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .product-list > div {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-list > div {
+    flex: 1 1 100%;
+  }
+}
+
+.custom-col {
+  flex: 0 0 calc(20% - 10px);
+  max-width: calc(20% - 10px);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.product-pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 20px 0;
+}
+
+.product-page-item {
+  margin: 0 5px;
+}
+
+.product-page-link {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.product-page-link:hover {
+  background-color: #f8f9fa;
+}
+
+.product-page-link.active {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+.product-page-link.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 0 0 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .product-item {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.buy {
+  display: inline-block; /* Giúp căn giữa và giữ hình dạng cho nút */
+  color: #ffffff; /* Màu chữ trắng */
+  background-color: #ffa244; /* Màu nền cam */
+  text-align: center; /* Căn giữa văn bản */
+  padding: 4px 20px; /* Khoảng cách bên trong nút */
+  border-radius: 5px; /* Bo góc nút */
+  font-weight: bold; /* Chữ đậm */
+  text-decoration: none; /* Bỏ gạch chân */
+  cursor: pointer; /* Con trỏ chỉ tay khi hover */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền */
+}
+
+.buy:hover {
+  background-color: #e67300; /* Màu cam đậm hơn khi hover */
+}
+.product-prices {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap; /* Không cho phép các phần tử xuống dòng */
+}
+
+.price-sale,
+.price-original {
+  white-space: nowrap; /* Ngăn không cho văn bản xuống dòng */
+  overflow: hidden; /* Cắt văn bản thừa */
+  text-overflow: ellipsis; /* Thêm dấu "..." nếu văn bản quá dài */
+}
+
+.price-sale {
+  font-size: 0.9rem;
+  color: green;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.price-original {
+  font-size: 0.9rem;
+  color: red;
+  text-decoration: line-through;
+}

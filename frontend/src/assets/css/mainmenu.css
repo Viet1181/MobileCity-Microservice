@@ -1,0 +1,156 @@
+/* Header background color */
+#header {
+  background-color: #c69a39;
+}
+.nav-item i {
+  font-size: 1.5em; /* Adjust this value to make the icon larger */
+}
+.nav-item {
+  margin-top: -25px;
+  margin-bottom: -50px;
+  margin-right: 15px;
+}
+.location {
+  font-size: x-small;
+  color: aliceblue;
+  background-color: #8a6c1c;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 5px;
+  width: 130px;
+  height: 50px;
+}
+.location_name {
+  font-size: x-small;
+  color: aliceblue;
+  background-color: #8a6c1c;
+  border-radius: 5px;
+
+  border: none;
+}
+.nav-link {
+  color: white;
+  font-weight: bold;
+  padding: 15px 10px;
+  position: relative;
+}
+
+/* Hover effect for nav links - underline */
+.nav-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* Create the underline starting from the middle */
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  bottom: -5px;
+  left: 50%; /* Start from the middle */
+  background-color: white;
+  visibility: hidden;
+  transform: translateX(-50%); /* Adjust position to align with middle */
+  transition: all 0.5s ease-in-out;
+  transform-origin: center; /* Origin of the effect (middle) */
+}
+
+.nav-link:hover::before {
+  visibility: visible;
+  width: 100%; /* Expand to full width */
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  display: none;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  position: absolute;
+  margin-top: -19px;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  z-index: 1000;
+  margin-top: 3px;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown item styling */
+.dropdown-item {
+  color: #333;
+
+  text-transform: capitalize;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+  color: #c69a39;
+}
+.cart {
+  font-size: x-small;
+  background-color: #8a6c1c;
+  border-radius: 5px;
+  margin-top: 5px;
+
+  width: 80px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-item {
+  color: #fff;
+  text-align: center;
+  border: none;
+  display: flex;
+  flex-direction: column; /* Xếp biểu tượng và chữ theo chiều dọc */
+  align-items: center;
+  justify-content: center; /* Căn giữa icon và chữ */
+
+  margin-top: 10px;
+}
+
+.cart-item {
+  text-decoration: none; /* Bỏ gạch chân mặc định */
+  color: inherit; /* Giữ nguyên màu chữ */
+}
+
+.cart-item:hover {
+  text-decoration: none; /* Bỏ gạch chân khi hover */
+  color: inherit; /* Không thay đổi màu sắc khi hover */
+}
+
+.cart-content {
+  margin-top: 5px;
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: column; /* Xếp icon và chữ theo chiều dọc */
+  align-items: center;
+  color: #fff;
+}
+
+.cart-content i {
+  font-size: 20px; /* Điều chỉnh kích thước icon */
+}
+
+.cart-content span {
+  font-size: 14px; /* Điều chỉnh kích thước chữ */
+  margin-top: 2px; /* Khoảng cách giữa icon và chữ */
+}
+
+.qty {
+  background-color: none ;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: 14px;
+  position: absolute; /* Định vị số lượng nằm chồng lên biểu tượng */
+  top: 30px;
+  right: 0px;
+}

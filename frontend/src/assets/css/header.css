@@ -1,0 +1,73 @@
+/* Giảm chiều cao của logo */
+.logo img {
+  width: 250px; /* Điều chỉnh kích thước logo */
+  height: 50px;
+}
+
+/* Căn chỉnh vị trí và giảm chiều cao các thành phần bên trong header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+
+  /* Giảm padding để giảm chiều cao */
+}
+.input-group {
+  position: relative;
+}
+
+.input-group-text {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none; /* Xóa border xung quanh icon */
+  z-index: 10;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0; /* Xóa padding không cần thiết */
+}
+
+.fa-search {
+  color: #c69a39; /* Đổi màu icon (bạn có thể chọn màu mong muốn) */
+  font-size: 18px; /* Điều chỉnh kích thước icon nếu cần */
+  border: none;
+}
+
+.input-group .form-control {
+  padding-right: 40px; /* Ensure space for the search icon */
+}
+
+/* Giảm padding của các phần tử trong header */
+.header-item {
+  margin-right: 15px; /* Điều chỉnh khoảng cách giữa các mục */
+}
+
+.navbar-nav .nav-item .nav-link {
+  padding: 8px 10px; /* Điều chỉnh padding của các mục trong menu */
+}
+
+.input-group {
+  max-width: 300px; /* Đảm bảo thanh tìm kiếm không quá dài */
+}
+
+.input-group .form-control {
+  height: 35px; /* Giảm chiều cao của thanh tìm kiếm */
+}
+
+.btn-search {
+  height: 35px; /* Đồng bộ chiều cao nút tìm kiếm với thanh tìm kiếm */
+  padding: 0 10px;
+}
+
+/* Giảm chiều cao của cart icon */
+.header-item .fa-shopping-cart {
+  font-size: 16px; /* Điều chỉnh kích thước icon */
+}
+
+/* Giảm padding cho phần MainMenu */
+#header .mainmenu {
+  padding: 0; /* Xóa padding không cần thiết */
+}

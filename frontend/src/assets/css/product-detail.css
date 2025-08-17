@@ -1,0 +1,158 @@
+.product-price-box {
+  background-color: #f9f9f9; /* Light background color */
+  border: 1px solid #e1e1e1; /* Border for better definition */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding for inner spacing */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px 0; /* Margin for spacing between elements */
+}
+
+.product-price-content {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.price-and-color {
+  display: flex;
+  justify-content: space-between; /* Space between price and color options */
+  align-items: center; /* Center vertically */
+  margin-bottom: 15px; /* Spacing between elements */
+}
+
+.price {
+  font-size: 24px; /* Larger font for price */
+  font-weight: bold; /* Bold for emphasis */
+  color: #d0021c; /* Red color for the price */
+}
+
+.price-old {
+  text-decoration: line-through; /* Strikethrough for old price */
+  color: #a9a9a9; /* Gray color */
+  font-size: 18px; /* Slightly smaller font */
+}
+
+.status-box {
+  display: flex;
+  align-items: center; /* Center vertically */
+  margin-left: 10px; /* Margin between status and price */
+}
+
+.status-instock {
+  color: #4caf50; /* Green color for in-stock status */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+.attribute-group {
+  margin-top: 20px; /* Space above attribute group */
+}
+
+.attribute-title {
+  font-weight: bold; /* Bold titles */
+  margin-bottom: 5px; /* Spacing below titles */
+}
+
+.color-list,
+.storage-list {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of items */
+}
+
+.color-item,
+.storage-item {
+  padding: 10px; /* Padding around items */
+  border: 1px solid #e1e1e1; /* Border around items */
+  border-radius: 4px; /* Rounded corners */
+  margin-right: 10px; /* Margin between items */
+  margin-bottom: 10px; /* Margin below items */
+  cursor: pointer; /* Pointer on hover */
+  transition: transform 0.2s; /* Smooth scaling on hover */
+}
+
+.color-item:hover,
+.storage-item:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.color-item.active {
+  border-color: #d0021c; /* Active color item border */
+  background-color: #fdfdfd; /* Light background for active item */
+}
+
+.warranty-list {
+  margin-top: 20px; /* Space above warranty section */
+  background-color: #f0f8ff; /* Light blue background */
+  border: 1px solid #e1e1e1; /* Border for warranty section */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding for warranty section */
+}
+
+.sale-box {
+  margin-top: 20px; /* Space above sale box */
+  background-color: #fff3cd; /* Light yellow background */
+  border: 1px solid #ffeeba; /* Border for sale box */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding for sale box */
+}
+.btn-addcart {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Khoảng cách giữa icon và text */
+  background-color: #6f96be; /* Màu nền nút */
+  color: #fff; /* Màu chữ */
+  border: none;
+  border-radius: 8px; /* Bo góc */
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Hiệu ứng khi hover */
+  margin-left: 15px;
+}
+
+.btn-addcart i {
+  font-size: 18px; /* Kích thước icon */
+}
+
+.btn-addcart:hover {
+  background-color: #99ccff; /* Màu nền khi hover */
+}
+.quantity-input {
+  width: 60px;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center; /* Căn giữa giá trị */
+  border: 1px solid #ddd; /* Màu border */
+  border-radius: 6px; /* Bo góc */
+  outline: none;
+  transition: border-color 0.3s ease; /* Hiệu ứng khi focus */
+}
+
+.quantity-input:focus {
+  border-color: #007bff; /* Đổi màu border khi focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2); /* Đổ bóng nhẹ khi focus */
+}
+
+.quantity-input::-webkit-inner-spin-button {
+  opacity: 0.6; /* Làm mờ nút tăng giảm */
+}
+.rating-show-start {
+  color: #ffd700; /* Màu vàng cho ngôi sao */
+
+  right: 10px; /* Căn chỉnh cách góc phải */
+  top: 10px; /* Căn chỉnh cách góc trên */
+  display: flex;
+  align-items: center;
+  font-size: 20px; /* Kích thước ngôi sao */
+  padding-left: 450px;
+}
+
+.rating-show-start i {
+  color: #e0c73a; /* Màu vàng cho các icon ngôi sao */
+}
+
+.rating-show-count {
+  color: #888;
+  font-size: 14px;
+  margin-left: 5px;
+  text-decoration: none;
+}

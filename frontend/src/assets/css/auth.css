@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+.auth-primary {
+  border: 0 !important;
+  background-color: transparent;
+  color: #000;
+  font-weight: 500;
+  padding: 0;
+  transition: 0.2s color;
+}
+
+.auth-title {
+  font-size: 2rem;
+  color: #0c0909;
+  background-color: transparent;
+  text-align: center;
+}
+
+.form-alert .alert-danger {
+  padding-left: 55px;
+  height: auto;
+}
+.toggle-btn {
+  background-color: #8a6c1c !important; /* Màu nền mong muốn */
+  color: #fff !important; /* Màu chữ */
+  border: none !important; /* Loại bỏ khung viền */
+  padding: 0px 30px !important; /* Điều chỉnh padding nếu cần */
+  border-radius: 5px !important; /* Bo góc nút */
+  display: flex !important;
+  flex-direction: column !important; /* Đặt icon trên chữ */
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: 2px;
+}
+
+.toggle-btn:hover {
+  background-color: #715a1a !important; /* Màu khi hover */
+}
+
+.toggle-btn .material-icons-outlined {
+  margin-bottom: 4px !important; /* Khoảng cách giữa icon và chữ */
+  font-size: 20px !important; /* Kích thước icon */
+}
+
+.toggle-btn span {
+  margin-top: -8px;
+  font-size: 14px !important; /* Kích thước chữ */
+}
+.menu-drop {
+  border: none !important;
+  background-color: #8a6c1c !important;
+  margin-top: 2px !important;
+  color: #ffffff !important;
+}
+.menu-drop .dropdown-item {
+  color: #ffff !important;
+}
+.menu-drop .dropdown-item:hover {
+  background-color: #8a6c1c !important;
+  color: #c69a39 !important;
+}
+
+.login-btn {
+  background-color: #8a6c1c; /* Set background color */
+  color: #fff; /* White text */
+  font-weight: 500;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 2px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px; /* Set minimum width to make it look like a button */
+}
+
+.btn-content {
+  display: flex;
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-content span {
+  font-size: 12px; /* Adjust text size */
+}
+
+.form-alert .alert-danger .fa-exclamation-triangle {
+  font-size: 18px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  width: 46px;
+  height: 100%;
+  text-align: center;
+  line-height: 44px;
+  background: transparent;
+  border-right: 1px solid #f5c6cb;
+}
+.modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  border-radius: 15px;
+}
+.modal-body > .auth {
+  position: relative;
+  max-width: 600px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(55px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+
+.modal-body > .auth > .form-group {
+  position: relative;
+  margin: 30px 0;
+  max-width: 310px;
+  border-bottom: 2px solid #fff;
+}
+
+.modal-body > .auth > .form-group > i {
+  position: absolute;
+  right: 8px;
+  color: #66c6fa;
+  font-size: 1.2rem;
+  top: 20px;
+}
+.modal-body > .auth > .form-group > label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #b0e3ff;
+  font-style: italic;
+  font-size: 1.22rem;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+.modal-body > .auth > .form-group > input:focus ~ label,
+.modal-body > .auth > .form-group > input:valid ~ label {
+  top: -5px;
+}
+.modal-body > .auth > .form-group > .auth-input {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0 35px 0 5px;
+  color: #fff;
+}
+/* .modal-body > .auth > .form-group > . */
+.modal-body > .auth > button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background-color: rgb(255, 255, 255, 1);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+.modal-body > .auth > button[type="submit"]:hover {
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.modal-body > .auth > button[span] {
+  color: #2b2d42;
+}
+
+.btn-toggle {
+  padding: 0 !important;
+}
+
+.btn-toggle:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.btn-toggle > span {
+  color: #000;
+  font-size: 12px;
+}
+
+.dropdown-menu > a {
+  color: #2b2d42 !important;
+}
+.dropdown-menu > a:active {
+  background-color: #fff !important;
+  color: #d10024;
+}
+
+/* Canh giữa phần Modal và giao diện chung */
+.custom-modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  min-height: 30vh; /* đảm bảo chiều cao */
+}
+
+/* Canh giữa form trong Modal */
+.custom-modal .auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* điều chỉnh chiều rộng để form tràn đều */
+}
+
+/* Tiêu đề Log in */
+.custom-modal .auth-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Canh giữa input và các thành phần form */
+.custom-modal .form-group {
+  position: relative;
+  margin: 1.5rem 0; /* khoảng cách giữa các input */
+  width: 100%;
+  max-width: 310px; /* cố định chiều rộng của các input */
+  border-bottom: 2px solid #fff;
+}
+
+/* Các điều chỉnh cho input */
+.custom-modal .form-group input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0 35px 0 10px;
+  color: #fff;
+}
+
+.custom-modal .form-group label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Nút login căn giữa và tạo khoảng cách */
+.custom-modal button[type="submit"] {
+  width: 100%;
+  max-width: 310px;
+  height: 50px;
+  margin-top: 2rem;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000; /* Đổi màu chữ của nút thành đen */
+}
+
+/* Đổi màu chữ khi hover */
+.custom-modal button[type="submit"]:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000; /* Đảm bảo chữ vẫn màu đen khi hover */
+}
